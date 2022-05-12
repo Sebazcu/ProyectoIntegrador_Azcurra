@@ -11,8 +11,8 @@ div{
 /*etiqueta nombre*/
 #nombre{
     font-weight: bold;
-    margin-top: 18%;
-    font-size: larger;
+    margin-top:30%;
+    font-size: 17px;
 }
 
 /*etiqueta foto de perfil*/
@@ -23,7 +23,7 @@ div{
         border-radius: 35%;
         box-shadow: 3px 3px 3px rgb(73, 153, 228);
         left: 1%;
-        top: 425px;    
+        top: 600px;    
     }
 }
 
