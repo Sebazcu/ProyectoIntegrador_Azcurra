@@ -2,8 +2,7 @@ div {
     background-color: black;
 }
 
-app-social{
-    float: right;
-    margin-top: 25px;
+.row{
+    align-items: center;
 }
 
