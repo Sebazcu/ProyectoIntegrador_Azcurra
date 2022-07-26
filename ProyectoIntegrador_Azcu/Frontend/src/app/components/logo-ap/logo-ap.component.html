@@ -9,7 +9,8 @@
             <a href="https://www.instagram.com/disenioconlapi/"><img src="../../../assets/Logos/instagram.png" id="instagram"></a>
             <a href="https://github.com/Sebazcu"><img src="../../../assets/Logos/github.png" id="github"></a>
             <a href=""><img src="../../../assets/Logos/facebook.png" id="facebook"></a>
-            <button type="button" class="btn btn-outline-light" (click)="login()">Iniciar Sesión</button>
+            <button type="button" class="btn btn-outline-light" (click)="login()" *ngIf="!isLogged">Iniciar Sesión</button>
+            <button type="button" class="btn btn-outline-light" (click)="onLogOut()"*ngIf="isLogged">Cerrar Sesión</button>
         </div>
     </div>
 </div>        
