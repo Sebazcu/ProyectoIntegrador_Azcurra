@@ -31,10 +31,10 @@ export class LoginComponent implements OnInit {
       this.roles = this.tokenService.getAuthorities();
     }
   }
-  
+
   onLogin(): void {
-    this.loginUsuario = new LoginUsuario(this.nombreUsuario, this.password); this.authService
-      .login(this.loginUsuario).subscribe(data =>{
+    this.loginUsuario = new LoginUsuario(this.nombreUsuario, this.password); 
+    this.authService.login(this.loginUsuario).subscribe(data =>{
         this.isLogged = true;
         this.isLogginFail = false;
         this.tokenService.setToken(data.token);
