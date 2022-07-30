@@ -70,7 +70,7 @@ public class CEducacion {
                 
     }
     
-    @PutMapping("/educacion/{id}")
+    @PutMapping("/update/{id}")
     public ResponseEntity<?> update(@PathVariable("id")int id, @RequestBody dtoEducacion dtoeducacion){
         if(!sEducacion.existsById(id)){
             return new ResponseEntity(new Mensaje("No Existe el ID"),HttpStatus.NOT_FOUND);
